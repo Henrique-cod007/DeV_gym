@@ -1,0 +1,248 @@
+@charset 'utf8';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #000;
+}
+
+/* CABEÇALHO */
+
+header {
+    width: 100%;
+    height: 43px;
+    background-color: #000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+.logo-esquerda {
+    position: absolute;
+    left: 16px;
+}
+
+.logo-esquerda img {
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+/* CONTEÚDO */
+
+main {
+    padding: 8px 16px;
+}
+
+.voltar {
+    display: inline-block;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 6px;
+    background-color: #000;
+    padding: 5px;
+    width: 5%;
+    height: 5%;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+.Input_modalidade{
+    padding: 5px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+
+}
+
+/* ÁREA PRINCIPAL */
+
+.conteudo {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 28px;
+}
+
+/* FORMULÁRIO */
+
+.formulario {
+    width: 874px;
+    min-height: 630px;
+    background-color: #f3f3f3;
+
+    border-radius: 10px;
+    padding: 10px 20px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario h2 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.campo label {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.campo input {
+    width: 100%;
+    height: 21px;
+
+    border: none;
+    border-bottom: 5px solid #292929;
+
+    background-color: transparent;
+    outline: none;
+
+    font-size: 15px;
+    padding: 5px 0;
+}
+
+.campo input::placeholder {
+    color: #888;
+    font-size: 12px;
+}
+
+.campo input:focus {
+    border-bottom-color: #777;
+}
+
+/* BOTÃO */
+
+form button {
+    width: 150px;
+    height: 45px;
+
+    background-color: #000;
+    color: #fff;
+
+    border: none;
+    border-radius: 4px;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    margin: 53px auto 0;
+    
+}
+
+form button:hover {
+    background-color: #333;
+}
+
+/* DETALHES DA COMPRA */
+
+.detalhes {
+    width: 400px;
+    min-height: 289px;
+
+    background-color: #f3f3f3;
+    border-radius: 10px;
+
+    padding: 13px 7px;
+}
+
+.detalhes h3 {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 27px;
+}
+
+.linha {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 0;
+    border-bottom: 1px solid #999;
+
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.plano {
+    background-color: #F6CE54;
+    padding: 5px 12px;
+    border-radius: 20px;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-top: 15px;
+    font-size: 15px;
+}
+
+.pagamento{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-top: 15px;
+    font-size: 15px;
+}
+
+#forma_pagamento{
+    padding: 6px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 650px) {
+
+    .conteudo {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .formulario {
+        width: 100%;
+        max-width: 374px;
+    }
+
+    .detalhes {
+        width: 100%;
+        max-width: 374px;
+    }
+
+    .formulario h2 {
+        font-size: 28px;
+    }
+}

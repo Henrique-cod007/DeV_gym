@@ -1,0 +1,144 @@
+@charset 'utf8';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    font-family: 'Oswald', sans-serif;
+    min-height: 100vh;
+}
+
+/* CABEÇALHO */
+
+header {
+    width: 100%;
+    height: 50px;
+    background-color: #000;
+
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* CONTEÚDO PRINCIPAL */
+
+main {
+    width: 100%;
+    padding: 40px 6.7%;
+}
+
+.container {
+    width: 100%;
+    min-height: 84vh;
+
+    background-color: #f3f3f3;
+    border-radius: 12px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CARTÃO DE CONFIRMAÇÃO */
+
+.confirmacao {
+    width: 420px;
+    min-height: 530px;
+
+    background-color: #d9d9d9;
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 25px 20px;
+}
+
+/* ÍCONE */
+
+.icone-sucesso {
+    width: 105px;
+    height: 105px;
+    margin-bottom: 25px;
+}
+
+.icone-sucesso svg {
+    width: 100%;
+    height: 100%;
+}
+
+/* TÍTULO */
+
+.confirmacao h2 {
+    font-size: 22px;
+    font-weight: 500;
+    text-align: center;
+    white-space: nowrap;
+
+    margin-bottom: 35px;
+}
+
+/* MENSAGEM */
+
+.mensagem {
+    color: #858585;
+    font-size: 16px;
+    font-weight: 500;
+
+    text-align: center;
+    line-height: 25px;
+
+    margin-bottom: 40px;
+}
+
+.familia {
+    color: #777;
+    font-size: 14px;
+    text-align: center;
+
+    margin-bottom: 20px;
+}
+
+/* BOTÃO */
+
+.btn-voltar {
+    width: 220px;
+    height: 40px;
+
+    background-color: #000;
+    border: 2px solid #000000;
+    border-radius: 6px;
+
+    color: #fff;
+    text-decoration: none;
+
+    font-size: 15px;
+    font-weight: 500;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: 0.3s;
+
+    margin-top: 25px;
+}
+
+.btn-voltar:hover {
+    background-color: #fff;
+    border-color: #39a035;
+    color: #000;
+}

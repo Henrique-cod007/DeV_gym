@@ -1,0 +1,149 @@
+@charset 'utf8';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Iosevka Charon', monospace;
+}
+
+header {
+    width: 100%;
+    height: 43px;
+    background-color: #000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+.logo-esquerda {
+    position: absolute;
+    left: 16px;
+}
+
+.logo-esquerda img {
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+/* CONTEÚDO */
+
+main {
+    margin: 10px;
+    
+}
+
+.conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.formulario {
+    margin: 10px;
+    width: 97%;
+    min-height: 91vh;
+    background-color: #f3f3f3;
+
+    border-radius: 10px;
+    padding: 10px 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.espaco_qr{
+    background-color: white;
+    width: 500px;
+    height: 600px;
+    border-radius: 20px;
+
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.Qr{
+    margin: 10px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0)),url('https://th.bing.com/th/id/OIP.xY9vxhwt8783J1e4Bo5z2QHaHa?w=155&h=180&c=7&r=0&o=7&pid=1.7&rm=3');
+    background-position: center;
+    background-size: cover;
+    border: 5px solid black;
+
+    width: 300px;
+    height: 300px;
+}
+
+.info_qr{
+    height: 200px;
+    width: 100%;
+
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.titu{
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info_qr p{
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+    padding: 7px;
+    border-radius: 10px;
+}
+
+.botao{
+    margin: 20px;
+    height: 30px;
+    width: 90px;
+    border: none;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    font-size: 17px;
+}
+.botao:hover{
+    background-color: #f3f3f3;
+    color: #000;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 650px) {
+
+    .conteudo {
+        flex-direction: column;
+        align-items: center;
+        
+        gap: 20px;
+    }
+
+    .formulario {
+        width: 100%;
+        max-width: 374px;
+    }
+}
